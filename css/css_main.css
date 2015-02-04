@@ -1,0 +1,81 @@
+html,body {
+	font-size:16px;
+	font-family:Arial, Helvetica, sans-serif;
+	margin:0;
+	padding:0;
+}
+h1 { color:#ffffff; margin:0; padding:0; font-size:1.5em; text-transform:lowercase; }
+#body_content { background-color:#fff; border-radius:1em; padding:1em; width:100%; height:100%; }
+#head_outer { background-color:#c1e1c9; padding:2em 1em 0.5em 1em; border-radius:1em; text-align:right; }
+#content_outer { height:100%; width:100%; }
+.spoof-menu { position:relative; clear:both; overflow:auto; width:100%; padding:1em 0 0 0; }
+.content_inner { float:left; width:32.66%; background-color:#d9f3fc; border-radius:0.5em; margin-left:1%; }
+.content_inner.first { margin-left:0; }
+.content_inner.second { background-color:#f6e1ff; }
+.content_inner.third { background-color:#e7cc65 }
+.content_inner div { padding:1em; }
+.content_inner div button { border:1px solid #c1e1c9; border-radius:0.5em; background-color:#fff; color:#666; padding:0.5em; font-weight:bold; }
+.device_details { clear:both; border-radius:0.5em; border:1px solid #000; padding:1em; margin-top:1em; }
+
+#foot-outer { position:relative; width:100%; margin-top:1em; }
+#foot-inner { padding:1em; background-color:#c1e1c9; border-radius:1em; color:#fff; font-size:0.9em; }
+
+/* Map styles */
+#mappage { overflow:hidden; }
+#map-outer { background-color:#aaa; height:100%; width:100%; overflow:hidden; }
+#map-inner {  }
+#currentUserPosition { 
+	position:absolute; 
+	width:30px; 
+	height:40px; 
+	background-image:url(../img/red_loc.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:center bottom;
+}
+
+/* Hotspots */
+.hotspot-boundry { stroke:#960DFF; stroke-width:1; fill:#960DFF; fill-opacity:0.25; }
+.hotspot-title { position:absolute; font-weight:bold; color:#fff; text-shadow: 2px 2px #333; text-align:center; pointer-events: none; }
+.hotspot-title .title { font-size:1.1em }
+.hotspot-title .feeding { font-weight:normal; font-size:0.8em; padding-top:0.25em; }
+
+/* Map controls */
+#map-controls { position:absolute; top:0px; left:0px; width:150px; border:1px solid #666; background-color:#ccc; padding:0.5em; color:#555; }
+#controls-menu { border-top:1px solid #aaa; padding:0.5em 0; display:none; }
+#map-controls .link {}
+.new-point { background-image:url(../img/blue-circle.png); background-size:100%; width:10px; height:10px; position:absolute; }
+.map-line { height:1px; background:#fff; }
+
+#point-controls { padding:0.5em; color:#555; display:none; }
+#point-controls .link { border:1px solid #999; padding:0.5em; margin-top:0.5em }
+#point-controls .info { font-size:0.7em; }
+
+/* Hotspot content popup */
+.hotspot-content { padding:0.5em; display:none; }
+.hotspot-content .panel-head { background-color:#960DFF; border-radius:0.25em; padding:1em; color:#fff; text-shadow:none; font-weight:bold; }
+.hotspot-content .panel-content { padding:1em 0; }
+
+/* Zoom Controls */
+.zoom { position:absolute; right:0px; padding:1em; font-weight:bold; background-color:#333; border:1px solid #333; }
+.zoom-in { top:0px; }
+.zoom-out { bottom:0px; }
+.zoom.active { background-color:#ccc; }
+.zoom-level { position:absolute; right:0px; top:0px; width: 0;	height: 0; border-top: 1em solid transparent; border-right: 2em solid #fff; border-bottom: 1em solid transparent; }
+
+/* Feeding Times */
+#feedTimes { position:absolute; background-color:#fff; border-radius:0.5em; padding:0.5em; width:300px; }
+#feedTimes .feedIcon { float:right; background-image:url(../img/feeding.png); background-size:contain; width:3em; height:3em; margin-bottom:1em;  }
+#feedTimes .feedCount { position:relative; color:#fff; top:1.15em; left:1.35em; }
+#feedTimes .info { font-size:0.8em; }
+#feedTimes .feedDetails { clear:both; color:#fff; font-size:0.9em; text-shadow:none; }
+#feedTimes .feedDetails div:nth-child(odd) { background-color:#666; border-radius:1em; padding:0.5em; margin-top:0.25em; }
+#feedTimes .feedDetails div:nth-child(even) { background-color:#999; border-radius:1em; padding:0.5em; margin-top:0.25em; }
+#feedTimes .feedDetails .name { font-weight:bold; }
+#feedTimes .feedDetails .description { font-weight:normal; font-size:0.9em; }
+#feedTimes .feedDetails .time { float:right; font-weight:bold; }
+.feedTimesTable { text-align:center; width:100%; margin-left:auto; margin-right:auto; }
+.feedTimesTable .feedTable { width:100%; }
+.feedTimesTable table { border-collapse:collapse; border-color:#999; }
+.feedTimesTable th, .feedTimesTable td { border:1px solid #999; }
+.feedTimesTable th { background-color:#999; color:#fff; text-shadow:none; }
