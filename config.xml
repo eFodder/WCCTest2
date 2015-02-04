@@ -7,9 +7,9 @@
 
     <!-- versionCode is optional and Android only -->
 
-    <name>Test App</name>
+    <name>Phonegap Test App</name>
 
-    <description>Test App for WCC</description>
+    <description>App itilising phonegap device calls to demo capability</description>
 
     <author href="http://www.efodder.net" email="rudi.rademacher@wcc.govt.nz">Rudi Rademacher</author>
       
