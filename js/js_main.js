@@ -120,7 +120,7 @@ function fireDeviceReady(){
 	pictureSource=navigator.camera.PictureSourceType;
     destinationType=navigator.camera.DestinationType;
 	
-	//populateDeviceDetails();
+	populateDeviceDetails();
 	
 	//$('#content_outer .device_details').html('boo');
 }
